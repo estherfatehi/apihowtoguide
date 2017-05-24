@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
 
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>How to Guide for the USDA API</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +44,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">How to Guide for the USDA API</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,20 +54,20 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#api">Intro to API</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#json">Intro to JS/JSON</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#usda">The USDA API</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#example">Example code</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,63 +79,51 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">Welcome to the how to guide for using the USDA API</div>
+                <div class="intro-heading"></div>
+                <a href="#api" class="page-scroll btn btn-xl">Next</a>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services">
+    <!-- Api Section -->
+    <section id="api">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">What is an API?</h2>
+                    <h3 class="section-subheading text-muted">API stands for Application Programming Interface. The link below will take you to the Wikipedia page, which explains very thoroughly what an API is. But for our purposes, here is an example. Let's say that myFitnessPal had never been created, and I (or you) would be the soon-to-be-very-rich genius to come up with the idea for this app. I would need nutritional data for every potential food item that can possibly be consumed. So using the USDA API, I can get data from USDA, such as nutrition facts, which I can then use in my own app, which could then hopefully make me a ton of money. </h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
+                </div>           
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
+                        <a href="https://en.wikipedia.org/wiki/Application_programming_interface">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">API</h4>
+                    <p class="text-muted">Click here for more in-depth information about APIs at Wikipedia</p>
+                </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="json" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Intro to JS and JSON</h2>
+                    <h3 class="section-subheading text-muted">JS (Javascript) is the language and JSON (Javascript Object Notation) is the format that we need to know to use the USDA API. This section assumes that you have basic knowledge of Javascript. </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <!--<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -145,24 +134,26 @@
                     <div class="portfolio-caption">
                         <h4>Round Icons</h4>
                         <p class="text-muted">Graphic Design</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
+                        <!-- <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
+                        </div> -->
+                        <img src="https://i.imgur.com/kSfCOAd.png" class="img-responsive" alt="" style="border:2px solid black">
+                    
                     <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4 class="text-center">Click here for Javascript</h4>
+                    </a>
+                        <br><br>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <!--<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -173,10 +164,12 @@
                     <div class="portfolio-caption">
                         <h4>Treehouse</h4>
                         <p class="text-muted">Website Design</p>
-                    </div>
+                    </div> -->
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <!--<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -187,24 +180,25 @@
                     <div class="portfolio-caption">
                         <h4>Golden</h4>
                         <p class="text-muted">Website Design</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
+                        <!-- <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
+                        </div> -->
+                        <img src="https://c1.staticflickr.com/4/3880/14636491710_d347ce16ae_b.jpg" class="img-responsive" alt="" style="border:2px solid black">
+                    
                     <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4 class="text-center">Click here for JSON</h4>
+                    </a> 
+                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -215,86 +209,33 @@
                     <div class="portfolio-caption">
                         <h4>Dreams</h4>
                         <p class="text-muted">Website Design</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- USDA API Section -->
+    <section id="usda">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">The USDA API</h2>
+                    <h3 class="section-subheading text-muted">United States Department of Agriculture</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            <div class="text-center">
+                                <p>Click <a href="https://ndb.nal.usda.gov/ndb/api/doc">here</a> to go to the USDA API documentation</p>
+                                <br><br>
                             </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
+                            <div class="text-center">
+                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/syDP68L.jpg" alt="" width="345" height="270">
+                                <p></a>Click <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">here</a> for a deeper look into the API</p> </a>
+                                <br><br>
                         </li>
                     </ul>
                 </div>
@@ -302,170 +243,32 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <!-- Example Section -->
+    <section id="example" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Example Code</h2>
+                    <h3 class="section-subheading text-muted">Click <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">here</a> to open up the example code page</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
+            <div class="text-center">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/X3kXMxA.jpg" alt="" width="345" height="270"></a>
+                
             </div>
         </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
+<!--     <div>
+        <p>Image credits in order that they appear:
+            Chocolate: https://c1.staticflickr.com/6/5053/5456987936_c5615cf141_b.jpg
+            JS: https://cdn.pixabay.com/photo/2017/03/30/17/41/javascript-2189147_960_720.png
+            JSON: https://c1.staticflickr.com/4/3880/14636491710_d347ce16ae_b.jpg
+            Magnifying glass: https://cdn.pixabay.com/photo/2015/11/03/09/03/magnifying-glass-1019982_960_720.jpg
+            Matrix code: https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg
+        </p>
+    </div> -->
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
@@ -485,18 +288,21 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>Example Code</h2>
+                                <p class="item-intro text-muted"></p>
+                                <p>The sample codes in this section use AJAX - Asynchronous Javascript and XML. This allows us to send a request asking USDA for information. To learn more about AJAX and the inner workings, click <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">here</a> to go to the MDN tutorial on AJAX.</p>
+                                <p>In the code below, I am sending an asynchronous GET request using the USDA search API. I am searching for the terms "eggs" and "butter", the number of results I want is no more than 25, and offset is 0 so I am only searching the first 25. If I want to search the next 25, I will set my offset value to 25. I am interested in getting the NDBNO number back, which I need to use on other API methods. I am storing my JSON object into the variable response, and in a loop, I am accessing and pushing the names and NDBNO numbers into empty arrays that I initialized in the beginning. Then I am looping through the arrays to print out the names and NDBNO numbers onto the webpage. Note that the variable for apikey says 'DEMO_KEY'. This should work, but you can replace that with your own API key.</p>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/0et8go3x/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <div>
+                                <p>Once you get the NDBNO number, you can use it to get more data using the Food Reports API. The format is the same as the code above, but pay attention to the URL that is passed in the GET request. Now instead of passing search terms in the query field, it passes the NDBNO numbers. Now I can access the nutritional information, which will help me if I wanted to make a fitness app, for example. This example gets nutritional facts of the food "Abiyuch, raw". I have no idea what food this is, but I like the name. </p>
+                                </div>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/op36vaf9/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <div>
+                                <p>Combining these two requests allows me to make a program that lets a user enter in the food they're searching for and prints out a list with words that match their query. Then when the user picks the exact food item, the program can get the NDBNO number and pass it into the second request, which will return the nutritional information associated with the food item.</p>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
                     </div>
@@ -519,12 +325,20 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>Javascript</h2>
+                                <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->   
+                                <p>This section briefly goes over some Javascript code that you will need to know when working with the USDA API<p>
+                                <p>First, we are going to go over arrays. The following code snippet initializes an empty array in the variable <font face="courier">myArray</font>, then pushes the number 1, 2, 3 into the empty array. It then prints out the array, and then it prints out the number at index 1. To learn more about arrays, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a> for the MDN tutorial on arrays.  </p>      
+                                <iframe width="100%" height="300" src="//jsfiddle.net/m2yqk4wL/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <p>Second, we are going to go over accessing objects. The following code snippet stores an object with nested properties inside the variable <font face="courier">object</font>. If you print out <font face="courier">object</font>, you'll notice a funny thing happens. That's because <font face="courier">object</font> is of type object, not a string. The code takes you through how to use each property name as a method to access the value that you want. If there are multiple values associated with a single property, it is treated like an array. You can access the index of this array, or you can loop through it and print out each value. This manipulation of objects will be very useful when we learn how to use the USDA API. To learn more about working with objects, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">here</a> for the MDN tutorial on objects.
+                                <br><br>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/h204dbde/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <p>To learn more about Javascript, click <a href="https://www.codecademy.com/learn/learn-javascript">here</a> for a link to a Javascript class on Codecademy. Click <a href="http://eloquentjavascript.net/">here</a> for a link to the book Eloquent Javascript.
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                <i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -606,12 +420,13 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>JSON</h2>
+                                <p class="item-intro text-muted">Javascript Object Notation</p>
+                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="http://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
+                                <br><br>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/dtyzo7kk/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
                     </div>
@@ -635,12 +450,24 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <h2>USDA API</h2>
+                                <p class="item-intro text-muted"></p>
+                                <h4>The API Key</h4>
+                                <p>Get your API key <a href="https://ndb.nal.usda.gov/ndb/api/doc#">here</a>. It is under the section "Gaining Access". An API key allows you to make requests at a rate of up to 1,000 requests per hour.</p>
+                                <br><br>
+                                <h4>The API Request</h4>
+                                <p>Requesting information from the USDA API is sent using a URL to query data. We will use <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md">this link</a> as an example. This will take you to the USDA's Food Report API. You will see it has a section titled "Request Parameters". The query is key=value format, and the request parameter is the key. If you scroll to the bottom of the page, it has a section under "Some Examples" that is titled "JSON". The URL in bold is the format that we will use to send our request. The query begins after the "?". According to the request parameters, only the ndbno number and the api key are necessary. The other queries are optional, like "type=b" which asks for a basic report, instead of full or stats, and "format=json", instead of xml. Notice in request parameters back at the top of the page, they provide default values for "type" and "format". So in the example URL under the example, "type=b" and "format=json" are not necessary, because the values that are passed are the default values anyway. The parameter, or key, ndbno, asks for a value that is the ID of the food. We will discuss this further in the next section when we go over the example code. 
+                                <h4>The API Response</h4>
+                                <p>If you sent the request using Google Chrome, you can press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
+                                <img src="https://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
+                                <p>The following image is of the object response that has been expanded. Notice the words surrounded in the green boxes. These are the nested properties of the object. The properties that are words can be handled as methods, and the ones that are numbers can be accessed as arrays. Let's say, for example, you want to access the <font face="courier">name</font> property that holds the value <font face="courier">"Water"</font>. In Javascript, this value would be accessed by something like: <font face="courier">console.log(<i>ObjectNameHere</i>.foods[0].food.nutrients[0].name)</font>. You can see this by following the words that are wrapped in green. Let's say that you want to access the type of measurement it uses and want the output of <font face="courier">"cup"</font>. What would be the code for that? (see below the image for the answer).
+                                </p>
+                                <br>
+                                <img src="https://i.imgur.com/tDQYqR1.jpg" style="border:1px solid black"></img>
+                                <br><br>
+                                <p>Answer: <font face="courier"><i>ObjectNameHere</i>.foods[0].food.nutrients[0].measures[0].label</font></p>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
                         </div>
                     </div>

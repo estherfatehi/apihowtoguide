@@ -295,9 +295,9 @@
                                 <iframe width="100%" height="300" src="//jsfiddle.net/0et8go3x/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
                                 <div>
-                                <p>Once you get the NDBNO number, you can use it to get more data using the Food Reports API. The format is the same as the code above, but pay attention to the URL that is passed in the GET request. Now instead of passing search terms in the query field, it passes the NDBNO numbers. Now I can access the nutritional information, which will help me if I wanted to make a fitness app, for example. This example gets nutritional facts of the food "Abiyuch, raw". I have no idea what food this is, but I like the name. </p>
+                                <p>Once you get the NDBNO number, you can use it to get more data using the API. The format is the same as the code above, but pay attention to the URL that is passed in the GET request. Now instead of passing search terms in the query field, it passes the NDBNO numbers. Now I can access the nutritional information, which will help me if I wanted to make a fitness app, for example. This example gets nutritional facts of the food "Abiyuch, raw". I have no idea what food this is, but I like the name. </p>
                                 </div>
-                                <iframe width="100%" height="300" src="//jsfiddle.net/op36vaf9/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/op36vaf9/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
                                 <div>
                                 <p>Combining these two requests allows me to make a program that lets a user enter in the food they're searching for and prints out a list with words that match their query. Then when the user picks the exact food item, the program can get the NDBNO number and pass it into the second request, which will return the nutritional information associated with the food item.</p>
@@ -452,13 +452,16 @@
                                 <!-- Project Details Go Here -->
                                 <h2>USDA API</h2>
                                 <p class="item-intro text-muted"></p>
+<<<<<<< HEAD
                                 <h4>The API Key</h4>
                                 <p>Get your API key <a href="https://ndb.nal.usda.gov/ndb/api/doc#">here</a>. It is under the section "Gaining Access". An API key allows you to make requests at a rate of up to 1,000 requests per hour.</p>
                                 <br><br>
                                 <h4>The API Request</h4>
                                 <p>Requesting information from the USDA API is sent using a URL to query data. We will use <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md">this link</a> as an example. This will take you to the USDA's Food Report API. You will see it has a section titled "Request Parameters". The query is key=value format, and the request parameter is the key. If you scroll to the bottom of the page, it has a section under "Some Examples" that is titled "JSON". The URL in bold is the format that we will use to send our request. The query begins after the "?". According to the request parameters, only the ndbno number and the api key are necessary. The other queries are optional, like "type=b" which asks for a basic report, instead of full or stats, and "format=json", instead of xml. Notice in request parameters back at the top of the page, they provide default values for "type" and "format". So in the example URL under the example, "type=b" and "format=json" are not necessary, because the values that are passed are the default values anyway. The parameter, or key, ndbno, asks for a value that is the ID of the food. We will discuss this further in the next section when we go over the example code. 
+=======
+>>>>>>> parent of 8b6cd30... added api key and request section to usda api
                                 <h4>The API Response</h4>
-                                <p>If you sent the request using Google Chrome, you can press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
+                                <p>If you sent the request through an html file, you can open it in a browser and press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
                                 <img src="https://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
                                 <p>The following image is of the object response that has been expanded. Notice the words surrounded in the green boxes. These are the nested properties of the object. The properties that are words can be handled as methods, and the ones that are numbers can be accessed as arrays. Let's say, for example, you want to access the <font face="courier">name</font> property that holds the value <font face="courier">"Water"</font>. In Javascript, this value would be accessed by something like: <font face="courier">console.log(<i>ObjectNameHere</i>.foods[0].food.nutrients[0].name)</font>. You can see this by following the words that are wrapped in green. Let's say that you want to access the type of measurement it uses and want the output of <font face="courier">"cup"</font>. What would be the code for that? (see below the image for the answer).
                                 </p>

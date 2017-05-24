@@ -143,7 +143,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div> -->
-                        <img src="http://i.imgur.com/kSfCOAd.png" class="img-responsive" alt="" style="border:2px solid black">
+                        <img src="https://i.imgur.com/kSfCOAd.png" class="img-responsive" alt="" style="border:2px solid black">
                     
                     <div class="portfolio-caption">
                         <h4 class="text-center">Click here for Javascript</h4>
@@ -233,7 +233,7 @@
                                 <br><br>
                             </div>
                             <div class="text-center">
-                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="http://i.imgur.com/syDP68L.jpg" alt="" width="345" height="270">
+                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/syDP68L.jpg" alt="" width="345" height="270">
                                 <p></a>Click <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">here</a> for a deeper look into the API</p> </a>
                                 <br><br>
                         </li>
@@ -253,7 +253,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="http://i.imgur.com/X3kXMxA.jpg" alt="" width="345" height="270"></a>
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/X3kXMxA.jpg" alt="" width="345" height="270"></a>
                 
             </div>
         </div>
@@ -282,7 +282,9 @@
                                 <p class="item-intro text-muted"></p>
                                 <p>In the code below, I am sending an asynchronous GET request using the USDA search API. I am searching for the terms "eggs" and "butter", the number of results I want is no more than 25, and offset is 0 so I am only searching the first 25. If I want to search the next 25, I will set my offset value to 25. I am interested in getting the NDBNO number back, which I need to use on other API methods. I am storing my JSON object into the variable response, and in a loop, I am accessing and pushing the names and NDBNO numbers into empty arrays that I initialized in the beginning. </p>
                                 <script async src="//jsfiddle.net/0et8go3x/1/embed/js,html,css,result/dark/"></script>
+                                <div>
                                 <p>Once you get the NDBNO number, you can use it to get more data using the API. </p>
+                                </div>
                                 <script async src="//jsfiddle.net/op36vaf9/embed/js,html,css,result/dark/"></script>
                                 <br><br>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -406,7 +408,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>JSON</h2>
                                 <p class="item-intro text-muted">Javascript Object Notation</p>
-                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="http://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
+                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="https://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
                                 <br><br>
                                 <script async src="//jsfiddle.net/dtyzo7kk/3/embed/js,html,css,result/dark/"></script>
                                 <br><br>
@@ -438,11 +440,11 @@
                                 <p class="item-intro text-muted"></p>
                                 <h4>The API Response</h4>
                                 <p>If you sent the request through an html file, you can open it in a browser and press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
-                                <img src="http://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
+                                <img src="https://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
                                 <p>The following image is of the object response that has been expanded. Notice the words surrounded in the green boxes. These are the nested properties of the object. The properties that are words can be handled as methods, and the ones that are numbers can be accessed as arrays. Let's say, for example, you want to access the <font face="courier">name</font> property that holds the value <font face="courier">"Water"</font>. In Javascript, this value would be accessed by something like: <font face="courier">console.log(<i>ObjectNameHere</i>.foods[0].food.nutrients[0].name)</font>. You can see this by following the words that are wrapped in green. Let's say that you want to access the type of measurement it uses and want the output of <font face="courier">"cup"</font>. What would be the code for that? (see below the image for the answer).
                                 </p>
                                 <br>
-                                <img src="http://i.imgur.com/tDQYqR1.jpg" style="border:1px solid black"></img>
+                                <img src="https://i.imgur.com/tDQYqR1.jpg" style="border:1px solid black"></img>
                                 <br><br>
                                 <p>Answer: <font face="courier"><i>ObjectNameHere</i>.foods[0].food.nutrients[0].measures[0].label</font></p>
                                 <br><br>

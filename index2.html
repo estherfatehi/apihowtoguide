@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>How to Guide for the USDA API</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">How to Guide for the USDA API</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#api">Intro to API</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#json">Intro to JS/JSON</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#usda">The USDA API</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#example">Example code</a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome to the how to guide for using the USDA API</div>
+                <div class="intro-heading"></div>
+                <a href="#api" class="page-scroll btn btn-xl">Next</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Api Section -->
+    <section id="api">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What is an API?</h2>
+                    <h3 class="section-subheading text-muted">API stands for Application Programming Interface. The link below will take you to the Wikipedia page, which explains very thoroughly what an API is. But for our purposes, here is an example. Let's say that myFitnessPal had never been created, and I (or you) would be the soon-to-be-very-rich genius to come up with the idea for this app. I would need nutritional data for every potential food item that can possibly be consumed. So using the USDA API, I can get data from USDA, such as nutrition facts, which I can then use in my own app, which could then hopefully make me a ton of money. </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                </div>           
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <a href="https://en.wikipedia.org/wiki/Application_programming_interface">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">API</h4>
+                    <p class="text-muted">Click here for more in-depth information about APIs at Wikipedia</p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="json" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Intro to JS and JSON</h2>
+                    <h3 class="section-subheading text-muted">JS (Javascript) is the language and JSON (Javascript Object Notation) is the format that we need to know to use the USDA API. This section assumes that you have basic knowledge of Javascript. </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <!--<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div> -->
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <!-- <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div> -->
+                        <img src="https://i.imgur.com/kSfCOAd.png" class="img-responsive" alt="" style="border:2px solid black">
+                    
+                    <div class="portfolio-caption">
+                        <h4 class="text-center">Click here for Javascript</h4>
+                    </a>
+                        <br><br>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <!--<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <!--<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div> -->
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <!-- <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div> -->
+                        <img src="https://c1.staticflickr.com/4/3880/14636491710_d347ce16ae_b.jpg" class="img-responsive" alt="" style="border:2px solid black">
+                    
+                    <div class="portfolio-caption">
+                        <h4 class="text-center">Click here for JSON</h4>
+                    </a> 
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USDA API Section -->
+    <section id="usda">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The USDA API</h2>
+                    <h3 class="section-subheading text-muted">United States Department of Agriculture</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="text-center">
+                                <p>Click <a href="https://ndb.nal.usda.gov/ndb/api/doc">here</a> to go to the USDA API documentation</p>
+                                <br><br>
+                            </div>
+                            <div class="text-center">
+                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/syDP68L.jpg" alt="" width="345" height="270">
+                                <p></a>Click <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">here</a> for a deeper look into the API</p> </a>
+                                <br><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Section -->
+    <section id="example" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Example Code</h2>
+                    <h3 class="section-subheading text-muted">Click <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">here</a> to open up the example code page</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="https://i.imgur.com/X3kXMxA.jpg" alt="" width="345" height="270"></a>
+                
+            </div>
+        </div>
+    </section>
+
+<!--     <div>
+        <p>Image credits in order that they appear:
+            Chocolate: https://c1.staticflickr.com/6/5053/5456987936_c5615cf141_b.jpg
+            JS: https://cdn.pixabay.com/photo/2017/03/30/17/41/javascript-2189147_960_720.png
+            JSON: https://c1.staticflickr.com/4/3880/14636491710_d347ce16ae_b.jpg
+            Magnifying glass: https://cdn.pixabay.com/photo/2015/11/03/09/03/magnifying-glass-1019982_960_720.jpg
+            Matrix code: https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg
+        </p>
+    </div> -->
+
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Example Code</h2>
+                                <p class="item-intro text-muted"></p>
+                                <p>The sample codes in this section use AJAX - Asynchronous Javascript and XML. This allows us to send a request asking USDA for information. To learn more about AJAX and the inner workings, click <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">here</a> to go to the MDN tutorial on AJAX.</p>
+                                <p>In the code below, I am sending an asynchronous GET request using the USDA search API. I am searching for the terms "eggs" and "butter", the number of results I want is no more than 25, and offset is 0 so I am only searching the first 25. If I want to search the next 25, I will set my offset value to 25. I am interested in getting the NDBNO number back, which I need to use on other API methods. I am storing my JSON object into the variable response, and in a loop, I am accessing and pushing the names and NDBNO numbers into empty arrays that I initialized in the beginning. Then I am looping through the arrays to print out the names and NDBNO numbers onto the webpage. Note that the variable for apikey says 'DEMO_KEY'. This should work, but you can replace that with your own API key.</p>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/0et8go3x/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <div>
+                                <p>Once you get the NDBNO number, you can use it to get more data using the API. The format is the same as the code above, but pay attention to the URL that is passed in the GET request. Now instead of passing search terms in the query field, it passes the NDBNO numbers. Now I can access the nutritional information, which will help me if I wanted to make a fitness app, for example. This example gets nutritional facts of the food "Abiyuch, raw". I have no idea what food this is, but I like the name. </p>
+                                </div>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/op36vaf9/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <div>
+                                <p>Combining these two requests allows me to make a program that lets a user enter in the food they're searching for and prints out a list with words that match their query. Then when the user picks the exact food item, the program can get the NDBNO number and pass it into the second request, which will return the nutritional information associated with the food item.</p>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Javascript</h2>
+                                <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->   
+                                <p>This section briefly goes over some Javascript code that you will need to know when working with the USDA API<p>
+                                <p>First, we are going to go over arrays. The following code snippet initializes an empty array in the variable <font face="courier">myArray</font>, then pushes the number 1, 2, 3 into the empty array. It then prints out the array, and then it prints out the number at index 1. To learn more about arrays, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a> for the MDN tutorial on arrays.  </p>      
+                                <iframe width="100%" height="300" src="//jsfiddle.net/m2yqk4wL/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <p>Second, we are going to go over accessing objects. The following code snippet stores an object with nested properties inside the variable <font face="courier">object</font>. If you print out <font face="courier">object</font>, you'll notice a funny thing happens. That's because <font face="courier">object</font> is of type object, not a string. The code takes you through how to use each property name as a method to access the value that you want. If there are multiple values associated with a single property, it is treated like an array. You can access the index of this array, or you can loop through it and print out each value. This manipulation of objects will be very useful when we learn how to use the USDA API. To learn more about working with objects, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">here</a> for the MDN tutorial on objects.
+                                <br><br>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/h204dbde/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <p>To learn more about Javascript, click <a href="https://www.codecademy.com/learn/learn-javascript">here</a> for a link to a Javascript class on Codecademy. Click <a href="http://eloquentjavascript.net/">here</a> for a link to the book Eloquent Javascript.
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                <i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>JSON</h2>
+                                <p class="item-intro text-muted">Javascript Object Notation</p>
+                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="http://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
+                                <br><br>
+                                <iframe width="100%" height="300" src="//jsfiddle.net/dtyzo7kk/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>USDA API</h2>
+                                <p class="item-intro text-muted"></p>
+                                <h4>The API Key</h4>
+                                <p>Get your API key <a href="https://ndb.nal.usda.gov/ndb/api/doc#">here</a>. It is under the section "Gaining Access". An API key allows you to make requests at a rate of up to 1,000 requests per hour.</p>
+                                <br><br>
+                                <h4>The API Request</h4>
+                                <p>Requesting information from the USDA API is sent using a URL to query data. We will use <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md">this link</a> as an example. This will take you to the USDA's Food Report API. You will see it has a section titled "Request Parameters". The query is key=value format, and the request parameter is the key. If you scroll to the bottom of the page, it has a section under "Some Examples" that is titled "JSON". The URL in bold is the format that we will use to send our request. The query begins after the "?". According to the request parameters, only the ndbno number and the api key are necessary. The other queries are optional, like "type=b" which asks for a basic report, instead of full or stats, and "format=json", instead of xml. Notice in request parameters back at the top of the page, they provide default values for "type" and "format". So in the example URL under the example, "type=b" and "format=json" are not necessary, because the values that are passed are the default values anyway. The parameter, or key, ndbno, asks for a value that is the ID of the food. We will discuss this further in the next section when we go over the example code. 
+                                <h4>The API Response</h4>
+                                <p>If you sent the request through an html file, you can open it in a browser and press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
+                                <img src="https://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
+                                <p>The following image is of the object response that has been expanded. Notice the words surrounded in the green boxes. These are the nested properties of the object. The properties that are words can be handled as methods, and the ones that are numbers can be accessed as arrays. Let's say, for example, you want to access the <font face="courier">name</font> property that holds the value <font face="courier">"Water"</font>. In Javascript, this value would be accessed by something like: <font face="courier">console.log(<i>ObjectNameHere</i>.foods[0].food.nutrients[0].name)</font>. You can see this by following the words that are wrapped in green. Let's say that you want to access the type of measurement it uses and want the output of <font face="courier">"cup"</font>. What would be the code for that? (see below the image for the answer).
+                                </p>
+                                <br>
+                                <img src="https://i.imgur.com/tDQYqR1.jpg" style="border:1px solid black"></img>
+                                <br><br>
+                                <p>Answer: <font face="courier"><i>ObjectNameHere</i>.foods[0].food.nutrients[0].measures[0].label</font></p>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

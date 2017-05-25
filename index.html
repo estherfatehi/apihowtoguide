@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- CITATIONS: chocolate: https://c1.staticflickr.com/6/5053/5456987936_c5615cf141_b.jpg -->
+
 <head>
 
     <meta charset="utf-8">
@@ -249,7 +249,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Example Code</h2>
-                    <h3 class="section-subheading text-muted">Click <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">here</a> to open up the example code pageTESTINGTESTING</h3>
+                    <h3 class="section-subheading text-muted">Click <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">here</a> to open up the example code page</h3>
                 </div>
             </div>
             <div class="text-center">
@@ -257,6 +257,18 @@
                 
             </div>
         </div>
+    </section>
+
+<!--     <div>
+        <p>Image credits in order that they appear:
+            Chocolate: https://c1.staticflickr.com/6/5053/5456987936_c5615cf141_b.jpg
+            JS: https://cdn.pixabay.com/photo/2017/03/30/17/41/javascript-2189147_960_720.png
+            JSON: https://c1.staticflickr.com/4/3880/14636491710_d347ce16ae_b.jpg
+            Magnifying glass: https://cdn.pixabay.com/photo/2015/11/03/09/03/magnifying-glass-1019982_960_720.jpg
+            Matrix code: https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg
+        </p>
+    </div> -->
+
 
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
@@ -278,7 +290,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Example Code</h2>
                                 <p class="item-intro text-muted"></p>
-                                <p>The sample codes in this section use AJAX - Asynchronous Javascript and XML. This allows us to send a request asking USDA for information. To learn more about AJAX and the inner workings, click <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">here</a> to go to the Mozilla Developer Network's tutorial.</p>
+                                <p>The sample codes in this section use AJAX - Asynchronous Javascript and XML. This allows us to send a request asking USDA for information. To learn more about AJAX and the inner workings, click <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">here</a> to go to the MDN tutorial on AJAX.</p>
                                 <p>In the code below, I am sending an asynchronous GET request using the USDA search API. I am searching for the terms "eggs" and "butter", the number of results I want is no more than 25, and offset is 0 so I am only searching the first 25. If I want to search the next 25, I will set my offset value to 25. I am interested in getting the NDBNO number back, which I need to use on other API methods. I am storing my JSON object into the variable response, and in a loop, I am accessing and pushing the names and NDBNO numbers into empty arrays that I initialized in the beginning. Then I am looping through the arrays to print out the names and NDBNO numbers onto the webpage. Note that the variable for apikey says 'DEMO_KEY'. This should work, but you can replace that with your own API key.</p>
                                 <iframe width="100%" height="300" src="//jsfiddle.net/0et8go3x/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
@@ -286,6 +298,9 @@
                                 <p>Once you get the NDBNO number, you can use it to get more data using the API. The format is the same as the code above, but pay attention to the URL that is passed in the GET request. Now instead of passing search terms in the query field, it passes the NDBNO numbers. Now I can access the nutritional information, which will help me if I wanted to make a fitness app, for example. This example gets nutritional facts of the food "Abiyuch, raw". I have no idea what food this is, but I like the name. </p>
                                 </div>
                                 <iframe width="100%" height="300" src="//jsfiddle.net/op36vaf9/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                                <br><br>
+                                <div>
+                                <p>Combining these two requests allows me to make a program that lets a user enter in the food they're searching for and prints out a list with words that match their query. Then when the user picks the exact food item, the program can get the NDBNO number and pass it into the second request, which will return the nutritional information associated with the food item.</p>
                                 <br><br>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                             </div>
@@ -312,12 +327,11 @@
                             <div class="modal-body">
                                 <h2>Javascript</h2>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->   
-                                <p>First thing you need to know is how to access objects. If you are not familiar with objects, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">here</a> to learn.  <p?
-                                <br><br>
-                                <p>First, we are going to go over arrays. The following code snippet first initializes an empty array in the variable <font face="courier">myArray</font>, then pushes the number 1, 2, 3 into the empty array. It then prints out the array, and then it prints out the number at index 1. </p>      
+                                <p>This section briefly goes over some Javascript code that you will need to know when working with the USDA API<p>
+                                <p>First, we are going to go over arrays. The following code snippet initializes an empty array in the variable <font face="courier">myArray</font>, then pushes the number 1, 2, 3 into the empty array. It then prints out the array, and then it prints out the number at index 1. To learn more about arrays, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a> for the MDN tutorial on arrays.  </p>      
                                 <iframe width="100%" height="300" src="//jsfiddle.net/m2yqk4wL/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
-                                <p>Second, we are going to go over accessing objects. The following code snippet stores an object with nested properties inside the variable <font face="courier">object</font>. If you print out <font face="courier">object</font>, you'll notice a funny thing happens. That's because <font face="courier">object</font> is of type object, not a string. The code takes you through how to use each property name as a method to access the value that you want. If there are multiple values associated with a single property, it is treated like an array. You can access the index of this array, or you can loop through it and print out each value. This manipulation of objects will be very useful when we learn how to use the USDA API. 
+                                <p>Second, we are going to go over accessing objects. The following code snippet stores an object with nested properties inside the variable <font face="courier">object</font>. If you print out <font face="courier">object</font>, you'll notice a funny thing happens. That's because <font face="courier">object</font> is of type object, not a string. The code takes you through how to use each property name as a method to access the value that you want. If there are multiple values associated with a single property, it is treated like an array. You can access the index of this array, or you can loop through it and print out each value. This manipulation of objects will be very useful when we learn how to use the USDA API. To learn more about working with objects, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">here</a> for the MDN tutorial on objects.
                                 <br><br>
                                 <iframe width="100%" height="300" src="//jsfiddle.net/h204dbde/1/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
@@ -408,7 +422,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>JSON</h2>
                                 <p class="item-intro text-muted">Javascript Object Notation</p>
-                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="https://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
+                                <p>JSON is Javascript dealing with objects. Find out more about JSON by clicking <a href="http://www.json.org/">here</a>. The two main JSON methods we will be using with the USDA API is <font face="courier">JSON.parse()</font> and <font face="courier">JSON.stringify()</font>. The former takes a string and turns it into an object, and the latter takes an object and turns it into a string. The following code snippet demonstrates both methods.</p>
                                 <br><br>
                                 <iframe width="100%" height="300" src="//jsfiddle.net/dtyzo7kk/3/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                                 <br><br>
@@ -438,6 +452,11 @@
                                 <!-- Project Details Go Here -->
                                 <h2>USDA API</h2>
                                 <p class="item-intro text-muted"></p>
+                                <h4>The API Key</h4>
+                                <p>Get your API key <a href="https://ndb.nal.usda.gov/ndb/api/doc#">here</a>. It is under the section "Gaining Access". An API key allows you to make requests at a rate of up to 1,000 requests per hour.</p>
+                                <br><br>
+                                <h4>The API Request</h4>
+                                <p>Requesting information from the USDA API is sent using a URL to query data. We will use <a href="https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md">this link</a> as an example. This will take you to the USDA's Food Report API. You will see it has a section titled "Request Parameters". The query is key=value format, and the request parameter is the key. If you scroll to the bottom of the page, it has a section under "Some Examples" that is titled "JSON". The URL in bold is the format that we will use to send our request. The query begins after the "?". According to the request parameters, only the ndbno number and the api key are necessary. The other queries are optional, like "type=b" which asks for a basic report, instead of full or stats, and "format=json", instead of xml. Notice in request parameters back at the top of the page, they provide default values for "type" and "format". So in the example URL under the example, "type=b" and "format=json" are not necessary, because the values that are passed are the default values anyway. The parameter, or key, ndbno, asks for a value that is the ID of the food. We will discuss this further in the next section when we go over the example code. 
                                 <h4>The API Response</h4>
                                 <p>If you sent the request through an html file, you can open it in a browser and press Ctrl+Shift+I to inspect the response. The type of response will be an object. It will look something like this:</p>
                                 <img src="https://imgur.com/IBlsuq0.jpg" style="border:1px solid black"></img>
